@@ -28,7 +28,7 @@
     }
   },
   "browserslist": [
-    "last 8 versions"
+    "last 99 versions"
   ],
   "dependencies": {
     "gulp-twig": "^1.2.0"
