@@ -14,16 +14,17 @@
         {% endblock %}
     </head>
     <body>
+        <!-- header -->
         {% include "../includes/header.twig" %}
-
+        
+        <!-- the main contant -->
         <div class="page-wrap">
             {% block content %}
             {% endblock %}
         </div>
 
+        <!-- footer -->
         {% include "../includes/footer.twig" %}
-
-
 
         {% block common_scripts %}
             <script src="js/libs/jquery-3.4.1.min.js"></script>
