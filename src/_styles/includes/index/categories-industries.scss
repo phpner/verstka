@@ -1,0 +1,116 @@
+.categoriesIndustries {
+  &__h2{
+    text-align: center;
+    margin-bottom: 50px;
+    h2{
+     font-family: 'Roboto', sans-serif;
+      font-size: 23px;
+      font-weight: bold;
+      text-align: center;
+      color: $dark-blue-grey;
+      padding-bottom: 7px;
+    }
+    span{
+      opacity: 0.4;
+     font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $dark-blue-grey;
+
+    }
+
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__col {
+    width: 224px;
+    height: 320px;
+    border-radius: 3px;
+    border: solid 1px #e7e8ed;
+    margin-right: 10px;
+    margin-top: 10px;
+    &__box{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      transition: all 0.5s;
+      &:hover{
+        border-radius: 3px;
+        box-shadow: 0 2px 30px 0 rgba(92, 103, 133, 0.2), 0 2px 5px 0 rgba(79, 75, 108, 0.15);
+        background-color: $pale-lilac;
+      }
+      &:hover .categoriesIndustries__col__link{
+        color: $pastel-red;
+        &:after{
+          content: url("../img/icon/arrow-left-hover.png");
+          padding-left: 3px;
+          vertical-align: middle;
+        }
+      }
+      img{
+        margin-top: 50px;
+      }
+    }
+  }
+  &__col__text {
+   font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: $dusk;
+  }
+  &__col__link {
+   font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: $cool-grey;
+    &:after{
+      content: url("../img/icon/arrow-left.png");
+      padding-left: 3px;
+      vertical-align: middle;
+    }
+  }
+  .categoriesArmob{
+    margin-bottom: 0;
+    margin-top: 30px;
+    padding: 10px 0;
+  }
+  .categoriesAr__left,.categoriesAr__right{
+    width: 45px;
+    height: 45px;
+    border-radius: 3px;
+    box-shadow: 0 2px 10px 0 rgba(92, 103, 133, 0.2), 0 2px 5px 0 rgba(79, 75, 108, 0.15);
+    background-color: #fdfdff;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .categoriesAr__left{
+    background: url(../img/icon/arrow-btn.png) center center no-repeat;
+    &:hover {
+      background: url(../img/icon/arrow-btn-hover.png) center center no-repeat;
+    }
+  }
+  .categoriesAr__right{
+    background: url(../img/icon/arrow-btn.png) center center no-repeat;
+    transform: scale(-1, -1);
+    &:hover{
+      background: url(../img/icon/arrow-btn-hover.png) center center no-repeat;
+    }
+  }
+}

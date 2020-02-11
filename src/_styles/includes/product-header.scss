@@ -1,0 +1,122 @@
+.productHeader {
+  padding-bottom: 60px;
+  h1{
+   font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    color: #1e1744;
+    margin-bottom: 23px;
+  }
+  &__row {
+    display: flex;
+  }
+  &__row__col__mark {
+   font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $dark-blue-grey;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    span{
+      border-radius: 10px;
+      background-color: $pale-grey-two;
+      padding: 5px 6px;
+      margin: 0 5px;
+    }
+  }
+  &__row__col__order{
+    margin-top: 40px;
+    display: inline-block;
+  }
+  &__row__col__price {
+    display: flex;
+    align-items: center;
+    .price__box{
+     font-family: 'Roboto', sans-serif;
+      font-size: 23px;
+      font-weight: bold;
+      color: $dark-blue-grey;
+      margin-right: 20px;
+    }
+    .price__mount{
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      user-select: none;
+      border-radius: 10px;
+      border: solid 1px $cool-grey;
+      font-weight: bold;
+      padding: 6px 10px;
+      color: $dark-blue-grey;
+      .cart-item__btn-dec-count {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .cart-item__btn-inc-count {
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      .glyphicon {
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+      }
+      .glyphicon-plus:before {
+        content: "\2b";
+        font-size: 23px;
+        font-weight: bold;
+      }
+      .glyphicon-minus:before {
+        content: "\2212";
+        font-size: 23px;
+        font-weight: bold;
+      }
+    }
+  }
+  &__row__col {
+    width: 50%;
+  }
+  &__row__col__textTop {
+   font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $dark-blue-grey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img{
+      padding-right: 15px;
+    }
+  }
+  &__row__col__text{
+    p{
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      color: $dusk-two;
+    }
+    a{
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+
+}

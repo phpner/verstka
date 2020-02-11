@@ -6,30 +6,375 @@
 
 @import "utils.scss";
 
+
+@import "libs/**/*";
+
 @import "header/*";
-@import "blocks/*";
+@import "includes/**/*";
 @import "footer/*";
 
+
+.working__product h2{
+  padding-top: 0;
+}
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1440px) {
+  .working__col {
+    display: flex;
+    align-items: center;
+    width: 225px;
+  }
 
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 1200px) {
+  .working__col {
+    width: 184px;
+  }
+  .aboutUs__right__img{
+    display: flex;
+    img{
+      width: 48%;
+    }
+  }
+  .topMenu-wrapper .topMenu__menu .topMenu__menu-li {
+    margin-right: 22px;
+  }
 
+}
+@media only screen and (max-width : 992px) {
+  .topMenu-wrapper .topMenu{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .topMenu-wrapper{
+    overflow: hidden;
+  }
+  .topMenu-wrapper .topMenu__tel{
+    order: -1;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d6d6d6;
+    width: 140%;
+    margin-right: -19px;
+    margin-left: -19px;
+  }
+  .topMenu-wrapper nav{
+    width: 100%;
+  }
+  .topMenu__menu{
+    max-height: 0;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .topMenu-wrapper .topMenu__menu .topMenu__menu-li{
+    margin-right: 0;
+    border-bottom: 1px solid #d4d4d475;
+  }
+  .topMenu-wrapper .topMenu__menu .topMenu__menu-li.has__sub .wrap_sub{
+    display: none;
+  }
+  .topMenu-wrapper .topMenu__menu .topMenu__menu-li > a{
+    padding: 18px 0;
+  }
+  .menu-opened{
+    max-height: initial;
+    transition: max-height 0.5s;
+  }
+
+  .topMenu-wrapper .topMenu .has__sub:before{
+    display: none;
+  }
+
+  .header__center__item{
+    width: 100%;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .header__center__item:last-of-type{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+  .header__center__item:last-of-type:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(246, 242, 242, 0.9);
+    z-index: 2;
+  }
+  .header__center__item img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+  .header__center__box input[type='text']{
+    position: relative;
+  }
+  .working__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .working__col:after{
+    display: none;
+  }
+  .working__col{
+    width: auto;
+    margin: 13px;
+    min-width: 229px;
+    padding: 25px 26px;
+    height: auto;
+  }
+
+
+  .footer__bottom .wrapper ul {
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .footer__bottom .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__right .wrap_sub {
+    margin-left: 36px;
+  }
+
+  .aboutUs__left .wrap_sub {
+    width: 362px;
+    padding: 40px 38px;
+  }
+  .newsWrapper__slider,.newsWrapper__slider .slick-list{
+    margin-left: 0;
+    padding-right: 0!important;
+  }
+  .categoriesIndustries__col{
+    margin: 15px;
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  .aboutUs{
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .aboutUs__left,.aboutUs__right{
+    width: 100%;
+    top: 0;
+    margin-bottom: 60px;
+  }
+  .aboutUs__left .wrap_sub:before{
+    display: none;
+  }
+  .aboutUs__left .wrap_sub {
+    width: 460px;
+    padding: 40px 38px;
+    margin: auto;
+  }
+  .aboutUs h2{
+    text-align: center;
+  }
+  .aboutUs__right__title-bottom{
+    margin-bottom: 30px;
+  }
+  .aboutUs__right__title-bottom, .aboutUs__right__contact{
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    span{
+      margin: 20px 0;
+    }
+  }
+  .manufacturer__slider__wrapper{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .manufacturer__slider__item{
+    width: 50%;
+  }
+  .manufacturer__slider img {
+    width: auto;
+    display: inline-block;
+    margin: 37px 10px;
+  }
+  .adressesTabs__header{
+    display: none;
+  }
+  .adressesTabs__mapWrapper__text{
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 90%;
+  }
+  .adressesTabs__mapWrapper .map__wra,.adressesTabs__mapWrapper #adressesTabs__map2,.adressesTabs__mapWrapper #adressesTabs__map3,
+  .adressesTabs__mapWrapper #adressesTabs__map4,
+  .adressesTabs__mapWrapper #adressesTabs__map5{
+    margin-left: 0;
+  }
+  #adressesTabs {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%,22px);
+    z-index: 5;
+  }
+  .adressesTabs__mapWrapper  .ymaps-2-1-75-controls-pane{
+    display: none;
+  }
+  .working h2 {
+    margin-bottom: 0px;
+  }
+  .working__contact {
+    padding-top: 11px;
+    flex-direction: column;
+    span{
+      margin: 24px 0px;
+    }
+  }
+  .working__contact__title{
+    margin-bottom: 30px;
+  }
+  .working__row {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .working__col{
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+    &:after{
+      content: '';
+      background: url("../img/icon/dots.png") 0 0 no-repeat;
+      background-size: 100%;
+      width: 15px;
+      height: 60px;
+      display: block;
+      position: absolute;
+      left: 38px;
+      top: -43px;
+    }
+    &:first-child:after{
+      display: none;
+    }
+  }
+  .footer__right,.footer__bottom .wrapper ul{
+    display: none;
+  }
+  .footer__logo {
+    width: 128px;
+    margin: auto;
+    margin-bottom: 50px;
+    display: block;
+  }
+  .footer__copy{
+    opacity: 0.4;
+  }
+  .aboutUs__right__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img:first-child{
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+  .aboutUs__left .wrap_sub,.header__center__box{
+    width: 100%;
+  }
+  .header__center__box button{
+    display: none;
+  }
+  .aboutUs-mob{
+    overflow: hidden;
+  }
+  .aboutUs__left .wrap_sub .wrap_sub__title,.wrap_sub__sub__title{
+    text-align: center;
+  }
+  .aboutUs__left {
+    width: 109%;
+    margin-bottom: 60px;
+    margin-left: -15px;
+  }
+  .h-480{
+    display: none;
+  }
+  .newsWrapper__slider {
+    margin-bottom: 34px;
+  }
+  .arrowNews-mob{
+    display: flex!important;
+    justify-content: center;
+    margin-bottom: 90px;
+  }
+  .newsWrapper h2{
+    text-align: center;
+    width: 100%;
+  }
+  .categoriesArmob{
+    display: flex;
+    justify-content: center;
+  }
+  .categoriesIndustries{
+    overflow: hidden;
+  }
+  .categoriesIndustries__col{
+    margin: 5px;
+  }
+  .adressesTabs__mapWrapper__text {
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 30px 0 rgba(92, 103, 133, 0.1);
+    background-color: #fdfdff;
+    position: relative;
+    top: 0;
+    transform: translateY(0%);
+    padding: 28px 25px;
+    left: 0;
+    margin: auto;
+    z-index: 3;
+  }
+  .adressesTabs__mapWrapper {
+    position: relative;
+    min-height: 410px;
+    padding-top: 50px;
+    overflow: hidden;
+  }
+  .map__wra{
+    position: absolute;
+    top: 0;
+    min-width: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .map__wra{
 
+  }
 }
 
 /* Custom, iPhone Retina */
@@ -47,16 +392,23 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
+.arrowNews-mob,.categoriesArmob{
+  display: none;
+}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+#adressesTabs{
+  display: none;
+}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+  .hamburger{
+    display: none;
+  }
 
 }
 

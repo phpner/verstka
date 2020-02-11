@@ -1,3 +1,25 @@
 <header class="header" id="header">
-<h2>Шапка</h2>
+    {% include "./top_menu.twig" %}
+
+        <div class="container">
+            <div class="header__center">
+                <div class="wrapper">
+                    <div class="header__center__row">
+                        <div class="header__center__item">
+                            <h1>Прямые поставки <br> оборудования и запчастей</h1>
+                            <div class="header__center__box">
+                                <img class="header__center__search" src="/img/icon/search.png" alt="">
+                                <input type="text" placeholder="Поиск запчастей">
+                                <button type="submit">Поиск</button>
+                            </div>
+                            <a class="header__center__link" href="#">Открыть катлог оборудования </a>
+                        </div>
+                        <div class="header__center__item">
+                            <img src="/img/header_right.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 </header>

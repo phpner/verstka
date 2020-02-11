@@ -1,0 +1,126 @@
+{% extends "layout/base.twig" %}
+{% block title %}Прямые поставки оборудования и запчастей{% endblock %}
+{% block content %}
+    <!-- header -->
+    {% include "./includes/top_menu.twig" %}
+
+    {% include "./includes/search.twig" %}
+
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="wrapper">
+                <ul>
+                    <li><a href="#">Производители&nbsp;/&nbsp;</a></li>
+                    <li><a href="#">Leuze electronic&nbsp;/&nbsp;</a></li>
+                    <li><span>Вертикальный винтовой смеситель привод типа HM Rexnord</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- productHeader -->
+    <div class="container">
+        <div class="wrapper">
+            <div class="productHeader">
+                <div class="productHeader__row">
+                    <div class="productHeader__row__col">
+                        <img src="https://fakeimg.pl/500x500">
+                    </div>
+                    <div class="productHeader__row__col">
+                        <div class="productHeader__row__col__textTop"> <img src="https://fakeimg.pl/25x26">Leuze electronic</div>
+                        <h1>Вертикальный винтовой смеситель <br> привод типа HM Rexnord</h1>
+                        <div class="productHeader__row__col__text">
+                            <p >
+                                Модульные легковесные корпуса/панели Bernstein для систем управления типа CC-3000
+                                представляют собой модульную систему: в связи с анодированными алюминиевыми профилями
+                                размеры ширины и высоты корпуса могут быть свободно выбраны в <a href="#">Подробнее</a>
+                            </p>
+                        </div>
+                        <div class="productHeader__row__col__mark">
+                            Маркировки:
+                            <span>cc-3000</span>
+                            <span>cc-3001</span>
+                            <span>ce-3005</span>
+                            <span>rexnord</span>
+                        </div>
+                        <div class="productHeader__row__col__price">
+                            <span class="price__box" data-first-price="2000">₽2000</span>
+                            <div class="price__mount">
+                                <span class="cart-item__btn-dec-count js-change-count" title="Уменьшить на 1" data-id="2" data-delta="-1">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </span>
+                                <span class="js-count">1</span>
+                                <span class="cart-item__btn-inc-count js-change-count" title="Увеличить на 1" data-id="2" data-delta="1">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <a  href="#" class="btn--red productHeader__row__col__order">Заказать товар</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CategoreProduct -->
+    <div class="container">
+        <div class="wrapper">
+            <div class="categoreProduct">
+                <h2>Категории оборудования и запчастей от Leuze electronic</h2>
+                <span>Смотреть все категории</span>
+                <div class="clearfix"></div>
+                <div class="categoreProduct__row">
+                    <div class="categoreProduct__row__item">
+                        <img src="https://fakeimg.pl/105x75">
+                        <div class="categoreProduct__row__item__text">
+                            Пневматическое <br>оборудование
+                        </div>
+                        <a href="#" class="categoreProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="categoreProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="categoreProduct__row__item">
+                        <img src="https://fakeimg.pl/105x75">
+                        <div class="categoreProduct__row__item__text">
+                            Насосы и насосные <br> станции
+                        </div>
+                        <a href="#" class="categoreProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="categoreProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="categoreProduct__row__item">
+                        <img src="https://fakeimg.pl/105x75">
+                        <div class="categoreProduct__row__item__text">
+                            Фильтры
+                        </div>
+                        <a href="#" class="categoreProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="categoreProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="categoreProduct__row__item">
+                        <img src="https://fakeimg.pl/105x75">
+                        <div class="categoreProduct__row__item__text">
+                            Электродвигатели
+                        </div>
+                        <a href="#" class="categoreProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="categoreProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="categoreProduct__row__item">
+                        <img src="https://fakeimg.pl/105x75">
+                        <div class="categoreProduct__row__item__text">
+                            Электроприводы <br>двигателя
+                        </div>
+                        <a href="#" class="categoreProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="categoreProduct__row__item__link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include './includes/index/adresses.twig' %}
+    <div class="working__product">
+     {% include './includes/index/working.twig' %}
+    </div>
+    <!-- footer -->
+    {% include "./includes/footer.twig" %}
+
+{% endblock %}

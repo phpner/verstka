@@ -1,3 +1,106 @@
 .footer {
-    flex: 0 0 auto;
+    .container{
+        background-color: rgba(235, 235, 244, 0.5);
+    }
+
+    h3{
+       font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: $dusk;
+        padding-bottom: 27px;
+    }
+    &__logo{
+        width: 128px;
+        margin-bottom: 50px;
+    }
+    &__row{
+        padding-top: 65px;
+        display: flex;
+    }
+    &__left {
+        flex: 1 0 auto;
+       p{
+          font-family: 'Roboto', sans-serif;
+           font-size: 14px;
+           color: $dusk;
+           line-height: 1.71;
+           padding-bottom: 27px;
+           font-weight: normal;
+       }
+        .contact{
+            font-weight: 500;
+        }
+    }
+    &__right {
+        .wrap_sub{
+            .wrap_sub__title{
+                font-size: 14px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.29;
+                letter-spacing: normal;
+                color: $dusk;
+                margin-bottom: 30px;
+            }
+            margin-left: 140px;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    width: 48%;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: $dusk;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    &__bottom{
+        border-top: 1px solid rgba(217, 217, 220, 0.75);
+        padding: 25px 0;
+        margin-top: 30px;
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            ul {
+                margin-right: auto;
+                display: flex;
+                a {
+                   font-family: 'Roboto', sans-serif;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: $dusk;
+                    padding-right: 30px;
+                    transition: color 0.4s;
+                    &:hover{
+                        color: $pastel-red;
+                    }
+                }
+            }
+        }
+    }
+    &__copy{
+       font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: $dusk;
+        display: flex;
+        align-items: center;
+    }
 }

@@ -1,0 +1,103 @@
+.aboutUs {
+  display: flex;
+  padding-top: 60px;
+  h2{
+   font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    color: $dark-blue-grey;
+    padding-bottom: 20px;
+  }
+  &__left {
+    width: 50%;
+    position: relative;
+    top: -119px;
+    .wrap_sub{
+      position: relative;
+      transform-style: preserve-3d;
+      z-index: 5;
+      &:before{
+        content: url("../img/logo-icon.png");
+        transform: translateZ(-1px);
+        position: absolute;
+        right: -35%;
+        z-index: 0;
+        top: 19%;
+      }
+      .wrap_sub__title{
+       font-family: 'Roboto', sans-serif;
+        font-size: 23px;
+        font-weight: bold;
+        color: $dark-blue-grey;
+        padding-bottom: 7px;
+      }
+      .wrap_sub__sub__title{
+       font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        color: $dusk;
+        padding-bottom: 40px;
+        display: block;
+      }
+      width: 400px;
+      border-radius: 5px;
+      box-shadow: 0 2px 30px 0 rgba(92, 103, 133, 0.1), 0 2px 5px 0 rgba(79, 75, 108, 0.15);
+      background-color: $pale-lilac;
+      padding: 40px 60px;
+      ul li{
+       font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        margin-bottom: 17px;
+        color: $dusk;
+        transition: all 0.8s;
+        &:hover > a{
+          color: $pastel-red;
+        }
+      }
+    }
+  }
+  &__right {
+    width: 50%;
+    &__contact{
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: $dusk;
+      span{
+        padding: 16px;
+      }
+      img{
+        padding-right: 12px;
+      }
+    }
+    &__title-bottom{
+      font-size: 23px;
+      font-weight: bold;
+      color: $dark-blue-grey;
+      padding-top: 40px;
+      display: block;
+      margin-bottom: 14px;
+    }
+    &__img{
+      margin-top: 15px;
+      img:first-child{
+        margin-right: 26px;
+      }
+    }
+  }
+  &__right__text {
+   font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: $dusk;
+    p{
+      padding-bottom: 20px;
+      line-height: 2.2;
+    }
+  }
+}

@@ -14,20 +14,16 @@
         {% endblock %}
     </head>
     <body>
-        <!-- header -->
-        {% include "../includes/header.twig" %}
-        
         <!-- the main contant -->
-        <div class="page-wrap">
+            <div class="main__wrapper">
             {% block content %}
             {% endblock %}
-        </div>
-
-        <!-- footer -->
-        {% include "../includes/footer.twig" %}
+            </div>
 
         {% block common_scripts %}
             <script src="js/libs/jquery-3.4.1.min.js"></script>
+            <script src="js/libs/jquery-ui.min.js"></script>
+            <script src="js/libs/slick.min.js"></script>
             <script src="js/main.js?v=2"></script>
         {% endblock %}
     </body>

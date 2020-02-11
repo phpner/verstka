@@ -1,0 +1,108 @@
+.newsWrapper {
+  h2{
+   font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    color: $dark-blue-grey;
+  }
+  &__slider {
+    margin-left: 119px;
+    margin-bottom: 100px;
+  }
+  &__slider__item {
+    a{
+
+    }
+    width: 270px;
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 5px 5px rgba(92, 103, 133, 0.1);
+    background-color: $pale-lilac;
+    margin: 0 15px;
+    &:hover .newsWrapper__slider__item__text{
+      color: #d65a54;
+    }
+    &:hover .newsWrapper__slider__item__more{
+      color: $dusk;
+    }
+    img{
+      border-radius: 8px 8px 0 0;
+      width: 100%;
+      height: 250px;
+    }
+  }
+  &__slider__item__text {
+   font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: $dark-blue-grey;
+    transition: all 0.4s;
+    display: block;
+    padding: 20px 30px 10px 30px;
+  }
+  &__slider__item__more {
+   font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: $cool-grey;
+    display: block;
+    padding: 0px 30px 20px 30px;
+    transition: all 0.4s;
+    &:after {
+    content: url(../img/icon/arrow-left.png);
+    padding-left: 3px;
+    vertical-align: middle;
+  }
+  }
+
+}
+
+.newsWrapper__slider .slick-list {
+  padding-right: 140px!important; // half partial
+  padding: 12px 0;
+}
+
+.newsWrapper__slider .newsWrapper__slider__item:not(.slick-active) {
+  opacity: 0.4;
+  box-shadow: 0 1px 0px 0px rgba(92, 103, 133, 0.1);
+}
+.newsWrapper__slider .newsWrapper__slider__item{
+  opacity: 1;
+}
+
+.newsWrapper__header{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.arrowNews{
+  &__left, &__right{
+    width: 45px;
+    height: 45px;
+    border-radius: 3px;
+    box-shadow: 0 2px 30px 0 rgba(92, 103, 133, 0.2), 0 2px 5px 0 rgba(79, 75, 108, 0.15);
+    background-color: $pale-lilac;
+    display: inline-block;
+    margin:0 10px;
+    cursor: pointer;
+  }
+  &__left{
+    background: url("../img/icon/arrow-btn.png")center center no-repeat;
+    &:hover{
+      background: url("../img/icon/arrow-btn-hover.png")center center no-repeat;
+       }
+  }
+  &__right{
+    background: url("../img/icon/arrow-btn.png")center center no-repeat;
+    transform: scale(-1, -1);
+    &:hover{
+      background: url("../img/icon/arrow-btn-hover.png")center center no-repeat;
+    }
+  }
+}

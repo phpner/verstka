@@ -1,0 +1,103 @@
+.working {
+  padding-bottom: 100px;
+  h2{
+    padding-top: 100px;
+    margin-bottom: 50px;
+   font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $dark-blue-grey;
+  }
+  &__contact{
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+   flex-wrap: wrap;
+    align-items: center;
+    span{
+      display: inline-block;
+      margin: 0 20px;
+    }
+    img{
+      margin-right: 15px;
+    }
+    &__title{
+     font-family: 'Roboto', sans-serif;
+      font-size: 23px;
+      font-weight: bold;
+      color: $dark-blue-grey;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 14px;
+    }
+  }
+  &__row {
+    display: flex;
+  }
+  &__col {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    height: 122px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 30px 0 rgba(92, 103, 133, 0.1);
+    border: solid 1px $pale-grey-two;
+    background-color: $pale-lilac;
+    position: relative;
+    padding: 30px 41px;
+    transform-style: preserve-3d;
+
+    span{
+      font-size: 19px;
+      font-weight: bold;
+      border: 2px solid #4f4b6c;
+      border-radius: 50%;
+      padding: 8px 12px;
+      display: inline-block;
+      margin-right: 15px;
+    }
+    &:after{
+      content: '';
+      background: url(../img/right-ar.png) 0 0 no-repeat;
+      position: absolute;
+      width: 37px;
+      height: 127px;
+      right: -35px;
+      top: -2px;
+      background-size: contain;
+      display: block;
+      transform: translateZ(1px);
+    }
+    &:nth-child(1){
+      position: relative;
+      z-index: 6;
+    }
+    &:nth-child(2){
+      position: relative;
+      z-index: 5;
+    }
+    &:nth-child(3){
+      position: relative;
+      z-index: 4;
+    }
+    &:nth-child(4){
+      position: relative;
+      z-index: 3;
+    }
+    &:nth-child(5){
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &__col__text {
+   font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: $dusk;
+  }
+}

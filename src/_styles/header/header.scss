@@ -1,4 +1,102 @@
 .header {
-    background: yellow;
-    
+    .wrapper{
+        height: 100%;
+        position: initial;
+    }
+    .container{
+        position: relative;
+    }
+
+    &__center {
+        background-image: linear-gradient(113deg, $white 10%, $white-two 100%);
+        height: 550px;
+        &__row{
+            display: flex;
+            height: 100%;
+        }
+
+        h1{
+           font-family: 'Roboto', sans-serif;
+            font-size: 42px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.43;
+            letter-spacing: normal;
+            color: $dark-blue-grey;
+            padding-bottom: 30px;
+        }
+        &__link{
+           font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            color: $dusk;
+            padding-top: 20px;
+            text-decoration: underline;
+        }
+    }
+    &__center__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: self-start;
+        height: 100%;
+        width: 50%;
+        img{
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+        }
+
+    }
+    &__center__box {
+        position: relative;
+        width: 470px;
+        height: 50px;
+        input[type='text']{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            border: solid 1px $pale-grey-two;
+            background-color: $white-three;
+            padding-left: 53px;
+            position: absolute;
+        }
+        ::placeholder{
+           font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $dusk;
+        }
+        button{
+            width: 101px;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px 0 rgba(228, 94, 88, 0.4);
+            background-color: $pastel-red;
+            border: none;
+           font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            color: $white-three;
+            position: absolute;
+            right: 8px;
+            top: 5px;
+            &:hover{
+                background-color: #d65a54;
+            }
+        }
+    }
+    .header__center__search{
+        z-index: 5;
+        width: 15px;
+        left: 25px;
+        height: 18px;
+        top: 15px;
+    }
 }

@@ -1,9 +1,19 @@
 {% extends "layout/base.twig" %}
-{% block title %}Воттакой прикол{% endblock %}
+{% block title %}Прямые поставки оборудования и запчастей{% endblock %}
 {% block content %}
-	<!-- in -->
-	<h2>body</h2>	
-	<div class="container">
-		Lorem ipsum dolor sit amet.	
-	</div>
+    <!-- header -->
+    {% include "./includes/header.twig" %}
+    <!-- about-us -->
+    {% include './includes/index/about-us.twig' %}
+    <!-- categories-industries -->
+    {% include './includes/index/categories-industries.twig' %}
+    <!-- news -->
+    {% include './includes/index/news.twig' %}
+    <!-- manufacturer -->
+    {% include './includes/index/manufacturer.twig' %}
+
+    {% include './includes/index/working.twig' %}
+    {% include './includes/index/adresses.twig' %}
+    <!-- footer -->
+    {% include "./includes/footer.twig" %}
 {% endblock %}

@@ -5,10 +5,36 @@
 .text-white {
     color: #fff;
 }
-
 .text-blue {
     color: $c-blue;
 }
+
+.btn--red{
+   font-family: 'Roboto', sans-serif;
+    padding: 12px 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px 0 rgba(228, 94, 88, 0.4);
+    background-color: $pastel-red;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: $white-three;
+    transition: all 0.4s;
+    &:hover{
+        background-color: #d65a54;
+    }
+}
+.overHidden{
+    overflow-x: hidden;
+}
 .clearfix{
     @include clearfix()
+}
+
+.margin-top-m{
+    margin-top: -100px;
+}
+
+.border-b{
+    border-bottom: 1px solid #dadada;
 }
