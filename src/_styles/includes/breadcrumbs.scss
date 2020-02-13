@@ -3,6 +3,7 @@
     display: flex;
     padding-top: 40px;
     padding-bottom: 50px;
+    flex-wrap: wrap;
     a{
      font-family: 'Roboto', sans-serif;
       font-size: 16px;
@@ -11,6 +12,8 @@
       line-height: normal;
       letter-spacing: normal;
       color: #524971;
+      display: inline-block;
+      padding: 4px;
     }
     span{
      font-family: 'Roboto', sans-serif;
@@ -21,6 +24,8 @@
       letter-spacing: normal;
       font-weight: bold;
       color: #524971;
+      display: inline-block;
+      padding: 4px;
     }
   }
 }

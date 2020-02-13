@@ -14,13 +14,10 @@
     top: -119px;
     .wrap_sub{
       position: relative;
-      transform-style: preserve-3d;
       z-index: 5;
-      &:before{
-        content: url("../img/logo-icon.png");
-        transform: translateZ(-1px);
+      &__imgBg{
         position: absolute;
-        right: -35%;
+        right: 33px;
         z-index: 0;
         top: 19%;
       }

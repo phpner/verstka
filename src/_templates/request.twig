@@ -1,0 +1,145 @@
+{% extends "layout/base.twig" %}
+{% block title %}Прямые поставки оборудования и запчастей{% endblock %}
+{% block content %}
+    <!-- header -->
+    {% include "./includes/top_menu.twig" %}
+
+    {% include "./includes/search.twig" %}
+
+    <div class="container request">
+        <div class="wrapper">
+            <div class="request__row">
+                <div class="request__row__left">
+                    <img class="request__img" src="/img/about/logo-ico.png" alt="">
+                    <div class="fillForm" id="callback-popup">
+
+                        <h2>Отправить запрос</h2>
+                        <p class="beh2">
+                            <b>ВНИМАНИЕ!</b>
+                            Запросы от торгующих организаций менеджеры компании
+                            не обрабатывают! Компания «ДАЛКОС»
+                            осуществляет поставки только конечному заказчику.</p>
+                        <form action="/" method="post" enctype="multipart/form-data">
+                            <div class="fillForm__input">
+
+                                <div class="input__box formContact__eff">
+                                    <span>Наименование организации</span>
+                                    <input type="text" name="qc" placeholder="Наименование организации" required>
+                                </div>
+                                <div class="input__box formContact__eff">
+                                    <span>ИНН</span>
+                                    <input type="text" name="inn" placeholder="ИНН" required>
+                                </div>
+                                <div class="input__box formContact__eff">
+                                    <span>Контактное лицо</span>
+                                    <input type="text" name="name" placeholder="Контактное лицо" required>
+                                </div>
+                                <div class="input__box formContact__eff">
+                                    <span>email</span>
+                                    <input type="text" name="email" placeholder="E-mail" required>
+                                </div>
+                            </div>
+                            <div class="textarea__box formContact__eff">
+                                <span>Заполните информацию</span>
+                                <textarea name="text"  cols="30" rows="10" placeholder="Заполните информацию об оборудовании (бренд, артикул или серийный номер, количество) или прикрепите файл"></textarea>
+                            </div>
+
+                            <div id="fileGo" class="dropzoneIn"></div>
+                            <input type="submit" class="btn--red">
+                        </form>
+
+                    </div>
+                </div>
+                <div class="contactInfo__box">
+                    <h3>Отдел продаж</h3>
+                    <div class="contactInfo__box__row">
+                        <img src="/img/icon/phone-icon-c.png" alt="">
+                        <p>
+                            Телефон: <a href="tel:+74955042679">+7 (495) 504-26-79</a> <br>
+                            Для регионов: <a href="tel:88007070067">8 800 707-00-67</a> (бесплатно)
+                        </p>
+                    </div>
+                    <div class="contactInfo__box__row">
+                        <img src="/img/icon/clock-c.png" alt="">
+                        <p>
+                            пн-чт: 8:30 -17:30 <br>
+                            пт: 8:30 -17:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+   <div class="container">
+       <div class="wrapper">
+           <div class="wrapper working pb-30">
+               <h2>Условия работы</h2>
+               <div class="working__row">
+                   <div class="working__col">
+                       <span>1</span>
+                       <div class="working__col__text">
+                           Свяжитесь <br>с нами
+                       </div>
+                   </div>
+                   <div class="working__col">
+                       <span>2</span>
+                       <div class="working__col__text">
+                           Оставить <br>заявку
+                       </div>
+                   </div>
+                   <div class="working__col">
+                       <span>3</span>
+                       <div class="working__col__text">
+                           Согласовать <br>условия
+                       </div>
+                   </div>
+                   <div class="working__col">
+                       <span>4</span>
+                       <div class="working__col__text">
+                           Заполнение <br>договора
+                       </div>
+                   </div>
+                   <div class="working__col">
+                       <span>5</span>
+                       <div class="working__col__text">
+                           Поставка <br>заказа
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+    <div class="container pb-100">
+        <div class="wrapper">
+            <div class="whyDalocs">
+                <h2>Почему стоит выбрать «ДАЛКОС» </h2>
+                <div class="whyDalocs__row">
+                    <div class="whyDalocs__col">
+                        <p>Компания ДАЛКОС берет на себя решение задачи поставок любых запчастей или расходников из
+                            Европы, США, Японии, Кореи, Африки</p>
+                        <p>и даже Австралии с максимальной выгодой для клиента. Мы уже заключили контракты с
+                            производителями, принципиально не работаем с посредниками, поэтому у нас обычно дешевле.</p>
+                    </div>
+                    <div class="whyDalocs__col">
+                        <p>На предприятии используется импортное оборудование, которое:<br>
+                            а) уже не производится;<br>
+                            б) выпущено более 20-ти, 30-ти, 50-ти лет назад;<br>
+                            в) не имеет технической документации, а вы не представляете, где можно заказать к нему
+                            запчасти по приемлемым ценам с гарантией поставки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include './includes/index/adresses.twig' %}
+
+    <!-- footer -->
+    {% include "./includes/footer.twig" %}
+
+{% endblock %}

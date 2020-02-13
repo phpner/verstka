@@ -1,7 +1,8 @@
 .header {
+  position: relative;
     .wrapper{
         height: 100%;
-        position: initial;
+        position: static;
     }
     .container{
         position: relative;
@@ -47,6 +48,7 @@
             height: 100%;
             position: absolute;
             right: 0;
+            top: 0;
         }
 
     }
@@ -67,10 +69,6 @@
            font-family: 'Roboto', sans-serif;
             font-size: 14px;
             font-weight: 500;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
             color: $dusk;
         }
         button{

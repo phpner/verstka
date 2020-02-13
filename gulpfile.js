@@ -78,7 +78,7 @@ gulp.task('css', function() {
 			beautify: true
 		}))
 		.pipe(cssmin())
-		.pipe(rename('style.min.css'))
+		.pipe(rename('style.css'))
 		.pipe(gulp.dest(PATHS.dist.css));
 });
 

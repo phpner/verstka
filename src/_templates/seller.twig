@@ -1,0 +1,210 @@
+{% extends "layout/base.twig" %}
+{% block title %}Прямые поставки оборудования и запчастей{% endblock %}
+{% block content %}
+    <!-- header -->
+    {% include "./includes/top_menu.twig" %}
+
+    {% include "./includes/search.twig" %}
+
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="wrapper">
+                <ul>
+                    <li><a href="#">Производители /&nbsp;</a></li>
+                    <li><span>Leuze electronic&nbsp;</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- productHeader -->
+    <div class="container">
+        <div class="wrapper">
+            <div class="sellerHeader">
+                <div class="sellerHeader__row">
+                    <div class="sellerHeader__col__left">
+                        <div class="sellerHeader__row__h1">
+                            <img class="sellerHeader__col__left__img" src="https://fakeimg.pl/66x66">
+                            <h1>Leuze electronic</h1>
+                        </div>
+                        <div class="sellerHeader__col__left__text">
+                            <p>Ассортимент импортного оборудования, поставляемого компанией ДАЛКОС, позволяет
+                                удовлетворить потребности клиентов в высокотехнологичном оборудовании для испытаний
+                                и измерений, оборудовании для обработки и переработки материалов, оборудовании для
+                                конвейерных и транспортных систем , оборудовании для подготовки и подачи воздуха и
+                                воды, в отдельных узлах и частях технологических линий а также в гидравлическом
+                                оборудовании, генераторах, компрессорах, насосном, пневматическом оборудовании,
+                                электродвигателях и приводной техники, компонентах автоматики и электроники, ЗИП
+                                <a href="#">Подробнее</a></p>
+                        </div>
+                    </div>
+                    <div class="sellerHeader__col__right">
+                        <div class="sellerCart">
+                            <div class="sellerCart__box">
+                            <div class="sellerCart__box__row"><span>Страна:</span><img src="/img/icon/ger.jpg" alt=""><p>Германия</p></div>
+                            <div class="sellerCart__box__row"><span>Год основания:</span> <p>1953</p></div>
+                            <div class="sellerCart__box__row"><span>Наличие товара:</span> <p>под заказ 4-8 н.</p></div>
+                            <hr>
+                            <div class="sellerHeader__contact">
+                                <div class="sellerHeader__contact__title">Свяжитесь с нами</div>
+                                <a href="#callback-popup" class="btn--red popup-with-form">Заполнить заявку</a> <span>или</span> <a href="tel:74955042679"><img src="/img/icon/phone-icon.png" alt="">+7(495) 504-26-79</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="sellerHeader__col__bottom">
+                        <h3>Сертификаты</h3>
+                        <div class="sellerHeader__col__bottom__box">
+                            <a href="#" class="sellerHeader__col__bottom__item">
+                                <div class="sellerHeader__col__bottom__item__svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20">
+                                        <path fill="#E45E58" fill-rule="nonzero" d="M10 0H2C.89 0 0 .89 0 2v16c0 1.11.89 2 2 2h12c1.11 0 2-.89 2-2V6l-6-6zM8 17l-3.89-3.89h2.33V10h3.12v3.11h2.33L8 17zM9 7V1.5L14.5 7H9z"/>
+                                    </svg>
+                                </div>
+                                <p>
+                                    Quality Certificate ISO 2000.png <br>
+                                    <span>16.2 KB</span>
+                                </p>
+                            </a>
+                            <a href="#" class="sellerHeader__col__bottom__item">
+                                <div class="sellerHeader__col__bottom__item__svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20">
+                                        <path fill="#E45E58" fill-rule="nonzero" d="M10 0H2C.89 0 0 .89 0 2v16c0 1.11.89 2 2 2h12c1.11 0 2-.89 2-2V6l-6-6zM8 17l-3.89-3.89h2.33V10h3.12v3.11h2.33L8 17zM9 7V1.5L14.5 7H9z"/>
+                                    </svg>
+                                </div>
+                                <p>
+                                    Accreditation certific…2019.png<br>
+                                    <span>22 KB</span>
+                                </p>
+                            </a>
+                            <a href="#" class="sellerHeader__col__bottom__item">
+                                <div class="sellerHeader__col__bottom__item__svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20">
+                                        <path fill="#E45E58" fill-rule="nonzero" d="M10 0H2C.89 0 0 .89 0 2v16c0 1.11.89 2 2 2h12c1.11 0 2-.89 2-2V6l-6-6zM8 17l-3.89-3.89h2.33V10h3.12v3.11h2.33L8 17zM9 7V1.5L14.5 7H9z"/>
+                                    </svg>
+                                </div>
+                                <p>
+                                    Quality Certificate ISO 2000.png<br>
+                                    <span>16.2 KB</span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CategoreProduct -->
+    <div class="container">
+        <div class="wrapper">
+            <div class="categoreProduct">
+                <div class="categoreProduct__h2">
+                    <h2>Категории оборудования</h2>
+                    <a href="#">Смотреть все категории</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="categoreProduct__row">
+                    <div class="categoreProduct__row__item">
+                        <img src="https://fakeimg.pl/105x75">
+                        <div class="categoreProduct__row__item__text">
+                            Пневматическое <br>оборудование
+                        </div>
+                        <a href="#" class="categoreProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="categoreProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="categoreProduct__row__item">
+                        <img src="https://fakeimg.pl/105x75">
+                        <div class="categoreProduct__row__item__text">
+                            Насосы и насосные <br> станции
+                        </div>
+                        <a href="#" class="categoreProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="categoreProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="categoreProduct__row__item">
+                        <img src="https://fakeimg.pl/105x75">
+                        <div class="categoreProduct__row__item__text">
+                            Фильтры
+                        </div>
+                        <a href="#" class="categoreProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="categoreProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="categoreProduct__row__item">
+                        <img src="https://fakeimg.pl/105x75">
+                        <div class="categoreProduct__row__item__text">
+                            Электродвигатели
+                        </div>
+                        <a href="#" class="categoreProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="categoreProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="categoreProduct__row__item">
+                        <img src="https://fakeimg.pl/105x75">
+                        <div class="categoreProduct__row__item__text">
+                            Электроприводы <br>двигателя
+                        </div>
+                        <a href="#" class="categoreProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="categoreProduct__row__item__link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- favoriteProduct -->
+    <div class="container">
+        <div class="wrapper pt-60 pb-100">
+            <div class="favoriteProduct">
+                <div class="favoriteProduct__h2">
+                    <h2>Популярная продукция от Leuze electronic</h2>
+                    <a href="#">Смотреть всю продукцию</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="favoriteProduct__row">
+                    <div class="favoriteProduct__row__item">
+                        <img src="https://fakeimg.pl/200x183">
+                        <div class="favoriteProduct__row__item__text">
+                            EXLAR FTP Series | Линейный <br> привод
+                        </div>
+                        <a href="#" class="favoriteProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="favoriteProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="favoriteProduct__row__item">
+                        <img src="https://fakeimg.pl/200x183">
+                        <div class="favoriteProduct__row__item__text">
+                            Линейная система приводов серии <br> KRPX
+                        </div>
+                        <a href="#" class="favoriteProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="favoriteProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="favoriteProduct__row__item">
+                        <img src="https://fakeimg.pl/200x183">
+                        <div class="favoriteProduct__row__item__text">
+                            Червячно-винтовая передача <br>Ruhrgetriebe
+                        </div>
+                        <a href="#" class="favoriteProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="favoriteProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="favoriteProduct__row__item">
+                        <img src="https://fakeimg.pl/200x183">
+                        <div class="favoriteProduct__row__item__text">
+                            Вертикальный винтовой смеситель <br> привод типа HM Rexnord
+                        </div>
+                        <a href="#" class="favoriteProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="favoriteProduct__row__item__link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="working__product">
+        {% include './includes/index/working.twig' %}
+    </div>
+
+    {% include './includes/index/adresses.twig' %}
+
+    <!-- footer -->
+    {% include "./includes/footer.twig" %}
+
+{% endblock %}

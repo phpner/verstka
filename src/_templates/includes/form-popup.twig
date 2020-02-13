@@ -1,0 +1,38 @@
+<div class="popup mfp-hide white-popup-block fillForm" id="callback-popup">
+
+        <h2>Отправить запрос</h2>
+        <p class="beh2">
+            <b>ВНИМАНИЕ!</b>
+            Запросы от торгующих организаций менеджеры компании
+            не обрабатывают! Компания «ДАЛКОС»
+            осуществляет поставки только конечному заказчику.</p>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <div class="fillForm__input">
+
+            <div class="input__box formContact__eff">
+                <span>Наименование организации</span>
+                <input type="text" name="qc" placeholder="Наименование организации" required>
+            </div>
+            <div class="input__box formContact__eff">
+                <span>ИНН</span>
+                <input type="text" name="inn" placeholder="ИНН" required>
+            </div>
+            <div class="input__box formContact__eff">
+                <span>Контактное лицо</span>
+                <input type="text" name="name" placeholder="Контактное лицо" required>
+            </div>
+            <div class="input__box formContact__eff">
+                <span>email</span>
+                <input type="text" name="email" placeholder="E-mail" required>
+            </div>
+        </div>
+        <div class="textarea__box formContact__eff">
+            <span>Заполните информацию</span>
+            <textarea name="text"  cols="30" rows="10" placeholder="Заполните информацию об оборудовании (бренд, артикул или серийный номер, количество) или прикрепите файл"></textarea>
+        </div>
+
+        <div id="fileGo" class="dropzoneIn"></div>
+        <input type="submit" class="btn--red">
+    </form>
+
+</div>

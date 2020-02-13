@@ -1,0 +1,199 @@
+{% extends "layout/base.twig" %}
+{% block title %}Прямые поставки оборудования и запчастей{% endblock %}
+{% block content %}
+    <!-- header -->
+    {% include "./includes/top_menu.twig" %}
+
+    {% include "./includes/search.twig" %}
+    
+    <div class="container">
+        <div class="wrapper">
+            <div class="contactInfo">
+                <h1>Контактная информация</h1>
+
+                <div class="contactInfo__row">
+                    <div class="contactInfo__box">
+                        <h3>Отдел продаж</h3>
+                        <div class="contactInfo__box__row">
+                            <img src="/img/icon/phone-icon-c.png" alt="">
+                            <p>
+                                Телефон: <a href="tel:+74955042679">+7 (495) 504-26-79</a> <br>
+                                Для регионов: <a href="tel:88007070067">8 800 707-00-67</a> (бесплатно)
+                            </p>
+                        </div>
+                        <div class="contactInfo__box__row">
+                            <img src="/img/icon/clock-c.png" alt="">
+                            <p>
+                                пн-чт: 8:30 -17:30 <br>
+                                пт: 8:30 -17:00
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contactInfo__box">
+                        <h3>Отдел закупок</h3>
+                        <div class="contactInfo__box__row">
+                            <img src="/img/icon/phone-icon-c.png" alt="">
+                            <p>
+                                Телефон: <a href="tel:+74955042679">+7 (495) 504-26-79</a> <br>
+                                Для регионов: <a href="tel:88007070067">8 800 707-00-67</a> (бесплатно)
+                            </p>
+                        </div>
+                        <div class="contactInfo__box__row">
+                            <img src="/img/icon/clock-c.png" alt="">
+                            <p>
+                                пн-чт: 8:30 -17:30 <br>
+                                пт: 8:30 -17:00
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contactInfo__box">
+                        <h3>Тендерный отдел</h3>
+                        <div class="contactInfo__box__row">
+                            <img src="/img/icon/phone-icon-c.png" alt="">
+                            <p>
+                                Телефон: <a href="tel:+74955042679">+7 (495) 504-26-79</a> <br>
+                                Для регионов: <a href="tel:88007070067">8 800 707-00-67</a> (бесплатно)
+                            </p>
+                        </div>
+                        <div class="contactInfo__box__row">
+                            <img src="/img/icon/clock-c.png" alt="">
+                            <p>
+                                пн-чт: 8:30 -17:30 <br>
+                                пт: 8:30 -17:00
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contactInfo__box">
+                        <h3>Отдел логистики</h3>
+                        <div class="contactInfo__box__row">
+                            <img src="/img/icon/phone-icon-c.png" alt="">
+                            <p>
+                                Телефон: <a href="tel:+74955042679">+7 (495) 504-26-79</a> <br>
+                                Для регионов: <a href="tel:88007070067">8 800 707-00-67</a> (бесплатно)
+                            </p>
+                        </div>
+                        <div class="contactInfo__box__row">
+                            <img src="/img/icon/clock-c.png" alt="">
+                            <p>
+                                пн-чт: 8:30 -17:30 <br>
+                                пт: 8:30 -17:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contactInfo__rowBelow">
+                    <div class="contactInfo__rowBelow__left">
+                        <img class="contactInfo__rowBelow__left__img" src="/img/contact-b.png" alt="">
+                        <div class="contactInfo__rowBelow__left__box">
+                            <h2>Наши реквизиты</h2>
+                            <div class="contactInfo__rowBelow__left__text">
+                                <span>Полное наименование</span>
+                                <p>ПУБЛИЧНОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО <br>«БАНК «САНКТ-ПЕТЕРБУРГ»</p>
+                            </div>
+                            <div class="contactInfo__rowBelow__left__text">
+                                <span>К/счет</span>
+                                <p>30101810900000000790 Северо-Западное <br> ГУ Банка России</p>
+                            </div>
+                            <div class="contactInfo__rowBelow__left__text">
+                                <span>БИК</span>
+                                <p>044030790</p>
+                            </div>
+                            <div class="contactInfo__rowBelow__left__text">
+                                <span>ИНН</span>
+                                <p>7831000027</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactInfo__rowBelow__right">
+                        <div class="formContact">
+                            <h2>Связатся с нами</h2>
+                            <form action="" method="post">
+                                <div class="formContact__input formContact__eff">
+                                    <input type="text" name="nameOrg" placeholder="Наименование организации">
+                                    <span>Наименование организации</span>
+                                </div>
+                                <div class="formContact__input formContact__eff">
+                                    <input type="text" name="inn" placeholder="ИНН">
+                                    <span>ИНН</span>
+                                </div>
+                                <div class="formContact__input formContact__eff">
+                                    <input type="text" name="cont" placeholder="Контактное лицо">
+                                    <span>Контактное лицо</span>
+                                </div>
+                                <div class="formContact__input formContact__eff">
+                                    <input type="text" name="email" placeholder="Email">
+                                    <span>Email</span>
+                                </div>
+                                <div class="formContact__input__textarea formContact__eff">
+                                    <textarea name="text" id="" cols="30" rows="10" placeholder="Дополнительная информация"></textarea>
+                                    <span>Дополнительная информация</span>
+                                </div>
+                                <input type="submit" class="btn--red">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    {% include './includes/index/adresses.twig' %}
+
+    <!-- footer -->
+    {% include "./includes/footer.twig" %}
+
+{% endblock %}
+
+  {% block costom_scripts %}
+      <script>
+          console.log('qoiu');
+
+          $(document).ready(function(){
+
+              $('.formContact__eff input, .formContact__eff textarea').on('focus',function(){
+
+                      $(this).closest(".formContact__eff").find('span').css({'fontSize': "12px", "top": "-6px"});
+                      console.log('jiji')
+
+              });
+
+              $('.formContact__eff input, .formContact__eff textarea').on('focusout',function(){
+                  var value = this.value;
+                  if (value.length > 0){
+                      $(this).closest(".formContact__eff").find('span').css({'fontSize': "12px", "top": "-6px"});
+                      console.log(this.value.length);
+                  }else {
+                      $(this).closest(".formContact__eff").find('span').removeAttr('style');
+                  }
+              });
+          });
+
+          $(".formContact form").validate({
+              rules: {
+                  // simple rule, converted to {required:true}
+                  nameOrg: "required",
+                  inn: "required",
+                  cont: "required",
+                  email: {
+                      required: true,
+                      email: true
+                  }
+              },
+              messages: {
+                  nameOrg: "Поле незаполнено",
+                  inn: "Поле незаполнено",
+                  cont: "Поле незаполнено",
+                  email: {
+                      required: "Поле незаполнено",
+                      email: "некорректный email"
+                  }
+              }
+          });
+      </script>
+  {% endblock %}

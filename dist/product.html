@@ -113,7 +113,7 @@
             <div class="productHeader">
                 <div class="productHeader__row">
                     <div class="productHeader__row__col">
-                        <img src="https://fakeimg.pl/500x500">
+                        <img class="productHeader__img" src="https://fakeimg.pl/500x500">
                     </div>
                     <div class="productHeader__row__col">
                         <div class="productHeader__row__col__textTop"> <img src="https://fakeimg.pl/25x26">Leuze electronic</div>
@@ -155,8 +155,10 @@
     <div class="container">
         <div class="wrapper">
             <div class="categoreProduct">
-                <h2>Категории оборудования и запчастей от Leuze electronic</h2>
-                <span>Смотреть все категории</span>
+                <div class="categoreProduct__h2">
+                    <h2>Категории оборудования и запчастей от Leuze electronic</h2>
+                    <a href="#">Смотреть все категории</a>
+                </div>
                 <div class="clearfix"></div>
                 <div class="categoreProduct__row">
                     <div class="categoreProduct__row__item">
@@ -202,6 +204,97 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- favoriteProduct -->
+    <div class="container">
+        <div class="wrapper pt-60 pb-100">
+            <div class="favoriteProduct">
+                <div class="favoriteProduct__h2">
+                    <h2>Популярная продукция от Leuze electronic</h2>
+                    <a href="#">Смотреть всю продукцию</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="favoriteProduct__row">
+                    <div class="favoriteProduct__row__item">
+                        <img src="https://fakeimg.pl/200x183">
+                        <div class="favoriteProduct__row__item__text">
+                            EXLAR FTP Series | Линейный <br> привод
+                        </div>
+                        <a href="#" class="favoriteProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="favoriteProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="favoriteProduct__row__item">
+                        <img src="https://fakeimg.pl/200x183">
+                        <div class="favoriteProduct__row__item__text">
+                            Линейная система приводов серии <br> KRPX
+                        </div>
+                        <a href="#" class="favoriteProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="favoriteProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="favoriteProduct__row__item">
+                        <img src="https://fakeimg.pl/200x183">
+                        <div class="favoriteProduct__row__item__text">
+                            Червячно-винтовая передача <br>Ruhrgetriebe
+                        </div>
+                        <a href="#" class="favoriteProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="favoriteProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="favoriteProduct__row__item">
+                        <img src="https://fakeimg.pl/200x183">
+                        <div class="favoriteProduct__row__item__text">
+                            Вертикальный винтовой смеситель <br> привод типа HM Rexnord
+                        </div>
+                        <a href="#" class="favoriteProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="favoriteProduct__row__item__link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="working__product">
+        <div class="container">
+    <div class="wrapper working">
+        <h2>Условия работы</h2>
+        <div class="working__row">
+            <div class="working__col">
+                <span>1</span>
+                <div class="working__col__text">
+                    Свяжитесь <br>с нами
+                </div>
+            </div>
+            <div class="working__col">
+                <span>2</span>
+                <div class="working__col__text">
+                    Оставить <br>заявку
+                </div>
+            </div>
+            <div class="working__col">
+                <span>3</span>
+                <div class="working__col__text">
+                    Согласовать <br>условия
+                </div>
+            </div>
+            <div class="working__col">
+                <span>4</span>
+                <div class="working__col__text">
+                    Заполнение <br>договора
+                </div>
+            </div>
+            <div class="working__col">
+                <span>5</span>
+                <div class="working__col__text">
+                    Поставка <br>заказа
+                </div>
+            </div>
+        </div>
+        <div class="working__contact">
+            <div class="working__contact__title">Свяжитесь с нами</div>
+            <a href="#callback-popup" class="btn--red popup-with-form">Заполнить заявку</a> <span>или</span> <a href="tel:74955042679"><img src="/img/icon/phone-icon.png" alt="">+7(495) 504-26-79</a>
+        </div>
+    </div>
+</div>
     </div>
 
     <div class="container">
@@ -250,7 +343,9 @@
                        </div>
                    </div>
                    <div class="map__wra">
-                       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A507d2a0f19e814015bca80edf0d9dc4de9d3caa842965e883280c3c219e3c692&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=true"></script>
+                       <div id="map_one"></div>
+                       
+
                    </div>
                </div>
             </div>
@@ -281,7 +376,7 @@
                         </div>
                     </div>
                     <div class="map__wra">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A507d2a0f19e814015bca80edf0d9dc4de9d3caa842965e883280c3c219e3c692&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=true"></script>
+                        <div id="map_two"></div>
                     </div>
                 </div>
             </div>
@@ -312,7 +407,7 @@
                         </div>
                     </div>
                     <div class="map__wra">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A507d2a0f19e814015bca80edf0d9dc4de9d3caa842965e883280c3c219e3c692&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=true"></script>
+                        <div id="map_thee"></div>
                     </div>
                 </div>
             </div>
@@ -343,7 +438,7 @@
                         </div>
                     </div>
                     <div class="map__wra">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A507d2a0f19e814015bca80edf0d9dc4de9d3caa842965e883280c3c219e3c692&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=true"></script>
+                        <div id="map_four"></div>
                     </div>
                 </div>
             </div>
@@ -374,56 +469,14 @@
                         </div>
                     </div>
                     <div class="map__wra">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A507d2a0f19e814015bca80edf0d9dc4de9d3caa842965e883280c3c219e3c692&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=true"></script>
+                        <div id="map_five"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-    <div class="working__product">
-     <div class="container">
-    <div class="wrapper working">
-        <h2>Условия работы</h2>
-        <div class="working__row">
-            <div class="working__col">
-                <span>1</span>
-                <div class="working__col__text">
-                    Свяжитесь <br>с нами
-                </div>
-            </div>
-            <div class="working__col">
-                <span>2</span>
-                <div class="working__col__text">
-                    Оставить <br>заявку
-                </div>
-            </div>
-            <div class="working__col">
-                <span>3</span>
-                <div class="working__col__text">
-                    Согласовать <br>условия
-                </div>
-            </div>
-            <div class="working__col">
-                <span>4</span>
-                <div class="working__col__text">
-                    Заполнение <br>договора
-                </div>
-            </div>
-            <div class="working__col">
-                <span>5</span>
-                <div class="working__col__text">
-                    Поставка <br>заказа
-                </div>
-            </div>
-        </div>
-        <div class="working__contact">
-            <div class="working__contact__title">Свяжитесь с нами</div>
-            <a href="#modelZayavka" class="btn--red">Заполнить заявку</a> <span>или</span> <a href="tel:74955042679"><img src="/img/icon/phone-icon.png" alt="">+7(495) 504-26-79</a>
-        </div>
-    </div>
-</div>
-    </div>
+
     <!-- footer -->
     <footer class="footer">
 <div class="container">
@@ -493,12 +546,56 @@
 
 
             </div>
+        <a href="#" id="go-top" title="Вверх"></a>
+        <div class="popup mfp-hide white-popup-block fillForm" id="callback-popup">
+
+        <h2>Отправить запрос</h2>
+        <p class="beh2">
+            <b>ВНИМАНИЕ!</b>
+            Запросы от торгующих организаций менеджеры компании
+            не обрабатывают! Компания «ДАЛКОС»
+            осуществляет поставки только конечному заказчику.</p>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <div class="fillForm__input">
+
+            <div class="input__box formContact__eff">
+                <span>Наименование организации</span>
+                <input type="text" name="qc" placeholder="Наименование организации" required>
+            </div>
+            <div class="input__box formContact__eff">
+                <span>ИНН</span>
+                <input type="text" name="inn" placeholder="ИНН" required>
+            </div>
+            <div class="input__box formContact__eff">
+                <span>Контактное лицо</span>
+                <input type="text" name="name" placeholder="Контактное лицо" required>
+            </div>
+            <div class="input__box formContact__eff">
+                <span>email</span>
+                <input type="text" name="email" placeholder="E-mail" required>
+            </div>
+        </div>
+        <div class="textarea__box formContact__eff">
+            <span>Заполните информацию</span>
+            <textarea name="text"  cols="30" rows="10" placeholder="Заполните информацию об оборудовании (бренд, артикул или серийный номер, количество) или прикрепите файл"></textarea>
+        </div>
+
+        <div id="fileGo" class="dropzoneIn"></div>
+        <input type="submit" class="btn--red">
+    </form>
+
+</div>
+        
+            <script src="js/libs/jquery-3.4.1.min.js" ></script>
+            <script src="js/libs/jquery-ui.min.js" ></script>
+            <script src="js/libs/slick.min.js" ></script>
+            <script src="js/libs/jquery.magnific-popup.min.js" ></script>
+            <script src="js/libs/dropzone.js" ></script>
+            <script src="js/libs/jquery.validate.min.js" ></script>
+            <script src="js/main.js" ></script>
+        
 
         
-            <script src="js/libs/jquery-3.4.1.min.js"></script>
-            <script src="js/libs/jquery-ui.min.js"></script>
-            <script src="js/libs/slick.min.js"></script>
-            <script src="js/main.js?v=2"></script>
         
     </body>
 </html>

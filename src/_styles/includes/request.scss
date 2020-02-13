@@ -1,0 +1,66 @@
+.request{
+  padding-top: 60px;
+  .fillForm{
+    z-index: 5;
+    margin: 0;
+  }
+ &__img{
+   width: 418px;
+   height: 418px;
+   position: absolute;
+   right: -159px;
+   top: 50%;
+   z-index: 0;
+   transform: translate(9%, -55%);
+
+ }
+  .fillForm h2{
+    font-size: 42px;
+    font-weight: bold;
+    text-align: left;
+  }
+  &__row{
+
+    &__left{
+      position: relative;
+    }
+    display: flex;
+    justify-content: space-between;
+    .contactInfo__box{
+      margin-top: 72px;
+      z-index: 5;
+      align-self: baseline;
+    }
+  }
+}
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .request__row {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .request__img{
+    display: none;
+  }
+  .request .fillForm{
+    margin: auto;
+  }
+  .request__row .contactInfo__box{
+    align-self: center;
+    margin-bottom: 0;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+

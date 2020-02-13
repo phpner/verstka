@@ -1,103 +1,181 @@
-.form {
-    input,
-    textarea {
-        margin-bottom: 15px;
-        padding: 15px 26px;
-        min-width: 0;
-        background-color: transparent;
-        border: none;
-        border-bottom: 1px solid #fff;
-        font-size: 16px;
-
-        @include placeholder();
-
-        &:focus {
-            background-color: #fff;
-            color: #000;
-        }
-    }
-
-    textarea {
-        resize: vertical;
-        min-height: 50px;
-    }
+.popup {
 }
-
-.form__select-wrap {
-    overflow: hidden;
-    position: relative;
-
-    &:after {
-        content: '';
-        display: block;
-        border: 4px solid transparent;
-        border-top-color: #fff;
-        position: absolute;
-        top: 24px;
-        right: 25px;
+.fillForm {
+    width: 670px;
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 7px 0 rgba(29, 24, 65, 0.3);
+    border: solid 1px $pale-grey-two;
+    background-color: #f9fafc;
+    margin: auto;
+    padding: 30px;
+    h2{
+        font-size: 23px;
+        font-weight: bold;
+        text-align: center;
+        color: $dark-blue-grey;
+        padding-bottom: 20px;
+    }
+    .beh2{
+        font-size: 14px;
+        color: $dusk;
+        padding-bottom: 30px;
+        line-height: 1.5;
+    }
+    ::placeholder{
+        font-size: 14px;
+        color: $dusk;
+    }
+    .error {
+        font-size: 12px;
+        font-weight: bold;
+        color: #e45e58;
+        padding-left: 20px;
     }
 
-    select {
-        margin-bottom: 15px;
-        padding: 0 26px;
-        min-width: 0;
-        width: calc(100% + 30px);
-        height: 49px;
-        background-color: transparent;
-        border: none;
-        border-bottom: 1px solid #fff;
-        font-size: 16px;
-
-        &:focus {
-            background-color: #fff;
-            color: #000;
-        }
-    }
-}
-
-.form__row {
-    margin-left: -15px;
-    margin-right: -15px;
-    margin-bottom: 10px;
-    
-    @media (min-width: 768px) {
+    &__input {
         display: flex;
-        justify-content: flex-start;
         flex-wrap: wrap;
+        justify-content: space-between;
+        .input__box{
+            position: relative;
+            width: 293px;
+            height: 50px;
+            border-radius: 10px;
+            border: solid 1px $pale-grey-two;
+            background-color: $white-three;
+            margin-bottom: 30px;
+        }
+        input[type='text']{
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding-left: 20px;
+            border-radius: 10px;
+        }
+        span{
+            font-size: 0px;
+            color: $dusk;
+            position: absolute;
+            top: 19px;
+            left: 20px;
+            transition: top 0.4s;
+        }
+
+        input:focus + span{
+            font-size: 12px;
+            color: $dusk;
+            position: absolute;
+            top: -6px;
+            left: 20px;
+        }
+
+        input:focus::placeholder{
+            color: transparent;
+        }
+    }
+    .textarea__box{
+        position: relative;
+        span{
+            font-size: 0px;
+            color: $dusk;
+            position: absolute;
+            top: 19px;
+            left: 20px;
+            transition: top 0.4s;
+        }
+
+        textarea:focus + span{
+            font-size: 12px;
+            color: $dusk;
+            position: absolute;
+            top: -6px;
+            left: 20px;
+        }
+
+        textarea:focus::placeholder{
+            color: transparent;
+        }
+        textarea{
+            padding: 20px;
+            width: 610px;
+            height: 180px;
+            border-radius: 10px;
+            border: solid 1px $pale-grey-two;
+            background-color: $white-three;
+            margin-bottom: 30px;
+        }
+        input.error, textarea.error{
+            border: 1px solid $pastel-red;
+        }
+    }
+
+    #fileGo{
+        width: 610px;
+        border-radius: 10px;
+        border: 3px dotted $cool-grey;
+        background-color: $white-three;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .dz-message{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            line-height: 1.5;
+            font-size: 15px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $dusk;
+            span{
+                color: $pastel-red;
+                padding-right: 5px;
+            }
+            img{
+                width: 16px;
+                height: 19px;
+                margin-right: 8px;
+            }
+        }
+
+    }
+    .btn--red{
+        margin: auto;
+        display:block;
+        width: 141px;
+        cursor: pointer;
+    }
+    .dz-started .dz-message{
+        display: none!important;
+    }
+}
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .fillForm{
+        width: 90%;
+    }
+    .fillForm textarea, .fillForm #fileGo, .fillForm__input input[type='text']{
+        width: 100%;
     }
 }
 
-.form__col {
-    padding: 0 15px;
-    flex: 1 1 auto;
 
-    @media (min-width: 768px) {
-        width: 50%;
-    }
-
-    @media (min-width: 992px) {
-        width: 25%;
-    }
-}
-
-.form__field-wrap {
-    position: relative;
-}
-
-.form__field-alert {
-    font-size: 12px;
-    font-weight: 400;
-    position: absolute;
-    top: -3px;
-    left: 26px;
-    z-index: 1;
-}
-
-.form__bottom {
-    margin-top: 25px;
-    text-align: center;
-
-    @media (min-width: 768px) {
-        margin-top: 35px;
-    }
-}

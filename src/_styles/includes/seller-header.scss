@@ -1,0 +1,210 @@
+.sellerHeader {
+  padding-bottom: 40px;
+  &__contact{
+    span{
+      padding: 16px;
+    }
+    &__title{
+      font-size: 23px;
+      font-weight: bold;
+      color: #1d1841;
+      padding-top: 40px;
+      display: block;
+      margin-bottom: 16px;
+    }
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__col__left {
+    width: 60%;
+  }
+  &__col__right {
+    width: 30%;
+  }
+  &__row__h1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    img{
+      margin-right: 30px;
+      border-radius: 15px;
+      box-shadow: 0 2px 30px 0 rgba(92, 103, 133, 0.2), 0 2px 5px 0 rgba(79, 75, 108, 0.15);
+    }
+    h1{
+      font-size: 40px;
+      font-weight: bold;
+      color: #1e1744;
+    }
+  }
+  &__col__left__img {
+  }
+  &__col__left__text {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: $dusk-two;
+    padding-right: 30px;
+    a{
+      text-decoration: underline;
+      font-weight: 900;
+    }
+  }
+  &__col__bottom {
+    width: 100%;
+    h3{
+      font-size: 23px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #201546;
+      padding-bottom: 40px;
+      padding-top: 20px;
+    }
+  }
+  &__col__bottom__box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 573px;
+  }
+  &__col__bottom__item {
+    display: flex;
+    margin-bottom: 30px;
+    margin-right: 50px;
+
+    &__svg{
+      margin-right: 15px;
+      background-color: $pale-lilac;
+      border-radius: 5px;
+      box-shadow: 0 2px 30px 0 rgba(92, 103, 133, 0.2), 0 2px 5px 0 rgba(79, 75, 108, 0.15);
+      padding: 11px 12px 6px;
+      svg{
+        path{
+          fill: $dusk;
+          transition: all 0.4s;
+        }
+
+      }
+    }
+    p{
+      padding-top: 5px;
+      font-weight: 700;
+      font-size: 12px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $dark-blue-grey;
+      transition: all 0.4s;
+      span{
+        padding-top: 5px;
+        font-size: 11px;
+        display: inline-block;
+        font-weight: 500;
+      }
+    }
+    &:hover{
+      svg{
+        path {
+          fill: $pastel-red;
+        }
+        }
+      p{
+        color: $pastel-red;
+      }
+
+    }
+  }
+}
+.sellerCart {
+  &__box {
+    width: 470px;
+    border-radius: 10px;
+    box-shadow: 0 2px 30px 0 rgba(92, 103, 133, 0.2), 0 2px 5px 0 rgba(79, 75, 108, 0.15);
+    background-color: $pale-lilac;
+    padding: 40px 35px;
+  }
+  &__box__row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 18px;
+    img{
+      width: 16px;
+      height: 11px;
+      margin-right: 8px;
+    }
+    span{
+      font-size: 16px;
+      color: $dark-blue-grey;
+      padding-right: 5px;
+      font-weight: 500;
+    }
+    p{
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+
+    }
+  }
+}
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .sellerHeader__col__left {
+    width: auto;
+    flex: 0 2 50%;
+  }
+  .sellerHeader__col__right {
+    width: auto;
+    flex: 1 0 40%;
+  }
+  .sellerCart__box{
+    margin: auto;
+  }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .sellerHeader__col__left {
+    width: auto;
+    flex: 0 2 100%;
+  }
+  .sellerCart__box{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .sellerCart__box__row{
+    justify-content: center;
+  }
+  .sellerHeader__col__bottom{
+    padding-top: 30px;
+    text-align: center;
+  }
+  .sellerHeader__col__bottom__box{
+    width: 100%;
+    justify-content: center;
+  }
+  .sellerHeader__contact .btn--red{
+    margin: auto;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .sellerHeader__contact{
+  display: flex;
+    flex-direction: column;
+  }
+}

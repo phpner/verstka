@@ -25,7 +25,7 @@
             <div class="productHeader">
                 <div class="productHeader__row">
                     <div class="productHeader__row__col">
-                        <img src="https://fakeimg.pl/500x500">
+                        <img class="productHeader__img" src="https://fakeimg.pl/500x500">
                     </div>
                     <div class="productHeader__row__col">
                         <div class="productHeader__row__col__textTop"> <img src="https://fakeimg.pl/25x26">Leuze electronic</div>
@@ -67,8 +67,10 @@
     <div class="container">
         <div class="wrapper">
             <div class="categoreProduct">
-                <h2>Категории оборудования и запчастей от Leuze electronic</h2>
-                <span>Смотреть все категории</span>
+                <div class="categoreProduct__h2">
+                    <h2>Категории оборудования и запчастей от Leuze electronic</h2>
+                    <a href="#">Смотреть все категории</a>
+                </div>
                 <div class="clearfix"></div>
                 <div class="categoreProduct__row">
                     <div class="categoreProduct__row__item">
@@ -116,10 +118,59 @@
         </div>
     </div>
 
-    {% include './includes/index/adresses.twig' %}
-    <div class="working__product">
-     {% include './includes/index/working.twig' %}
+    <!-- favoriteProduct -->
+    <div class="container">
+        <div class="wrapper pt-60 pb-100">
+            <div class="favoriteProduct">
+                <div class="favoriteProduct__h2">
+                    <h2>Популярная продукция от Leuze electronic</h2>
+                    <a href="#">Смотреть всю продукцию</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="favoriteProduct__row">
+                    <div class="favoriteProduct__row__item">
+                        <img src="https://fakeimg.pl/200x183">
+                        <div class="favoriteProduct__row__item__text">
+                            EXLAR FTP Series | Линейный <br> привод
+                        </div>
+                        <a href="#" class="favoriteProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="favoriteProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="favoriteProduct__row__item">
+                        <img src="https://fakeimg.pl/200x183">
+                        <div class="favoriteProduct__row__item__text">
+                            Линейная система приводов серии <br> KRPX
+                        </div>
+                        <a href="#" class="favoriteProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="favoriteProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="favoriteProduct__row__item">
+                        <img src="https://fakeimg.pl/200x183">
+                        <div class="favoriteProduct__row__item__text">
+                            Червячно-винтовая передача <br>Ruhrgetriebe
+                        </div>
+                        <a href="#" class="favoriteProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="favoriteProduct__row__item__link">Подробнее</a>
+                    </div>
+                    <div class="favoriteProduct__row__item">
+                        <img src="https://fakeimg.pl/200x183">
+                        <div class="favoriteProduct__row__item__text">
+                            Вертикальный винтовой смеситель <br> привод типа HM Rexnord
+                        </div>
+                        <a href="#" class="favoriteProduct__row__item__model">Отправить запрос</a>
+                        <a href="#" class="favoriteProduct__row__item__link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="working__product">
+        {% include './includes/index/working.twig' %}
+    </div>
+
+    {% include './includes/index/adresses.twig' %}
+
     <!-- footer -->
     {% include "./includes/footer.twig" %}
 

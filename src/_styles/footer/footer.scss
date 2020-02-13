@@ -19,7 +19,7 @@
         display: flex;
     }
     &__left {
-        flex: 1 0 auto;
+        flex: 1 0 14%;
        p{
           font-family: 'Roboto', sans-serif;
            font-size: 14px;
@@ -33,6 +33,7 @@
         }
     }
     &__right {
+      flex:1 0 50%;
         .wrap_sub{
             .wrap_sub__title{
                 font-size: 14px;
@@ -44,7 +45,6 @@
                 color: $dusk;
                 margin-bottom: 30px;
             }
-            margin-left: 140px;
             ul{
                 display: flex;
                 flex-wrap: wrap;
@@ -58,6 +58,11 @@
                     letter-spacing: normal;
                     color: $dusk;
                     margin-bottom: 20px;
+                  a{
+                    &:hover{
+                      color: $pastel-red;
+                    }
+                  }
                 }
             }
         }

@@ -1,4 +1,29 @@
 .categoreProduct {
+  &__h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    a{
+      font-size: 14px;
+      font-weight: bold;
+      color: $pastel-red;
+      position: relative;
+      text-decoration: underline;
+      padding-right: 20px;
+      &:before{
+        content: "";
+        background: url("../img/icon/arrow-btn-hover.png")0 0 no-repeat;
+        width: 15px;
+        height: 15px;
+        display: block;
+        position: absolute;
+        top: -2px;
+        right: 0px;
+        transform: scale(-1,-1);
+      }
+    }
+  }
   h2{
     font-size: 23px;
     font-weight: bold;
@@ -7,11 +32,12 @@
     line-height: normal;
     letter-spacing: normal;
     color: #231349;
-    padding-bottom: 40px;
+
   }
   &__row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   &__row__item {
     width: 215px;
@@ -22,15 +48,20 @@
     display: flex;
     flex-direction: column;
     margin-left: 19px;
+    transition: all 0.4s;
     &:first-of-type{
       margin-left: 0;
     }
     img{
       width: auto;
     }
+    &:hover{
+      box-shadow: 0 2px 30px 0 rgba(92, 103, 133, 0.2), 0 2px 5px 0 rgba(79, 75, 108, 0.15);
+      background-color: $pale-lilac;
+    }
   }
   &__row__item__text {
-   font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
@@ -40,10 +71,9 @@
     text-align: center;
     color: #201546;
     padding-top: 30px;
-    flex: 0 0 35%;
+    flex: 0 1 45%;
   }
   &__row__item__model {
-    width: 141px;
     text-align: center;
     padding: 11px 8px;
     border-radius: 10px;
@@ -57,6 +87,12 @@
     letter-spacing: normal;
     color: $dusk;
     margin: 0 auto;
+    display: block;
+    width: auto;
+    transition: all 0.4s;
+    &:hover{
+      color: $pastel-red;;
+    }
   }
   &__row__item__link {
     font-family: 'Roboto', sans-serif;
@@ -68,7 +104,14 @@
     letter-spacing: normal;
     color: $dusk-two;
     text-align: center;
-    margin-top: auto;
+    display: block;
+    width: auto;
+    min-width: 174px;
+    transition: all 0.4s;
+    margin: 30px auto 13px auto;
+    &:hover{
+      color: $pastel-red;;
+    }
     &:after {
       content: "";
       background: url(../img/icon/arrow-btn.png) 0 0 no-repeat;
@@ -84,3 +127,51 @@
     }
   }
 }
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .categoreProduct__row{
+    justify-content: center;
+  }
+  .categoreProduct__row__item{
+    margin: 15px;
+  }
+  .categoreProduct__row__item:first-of-type {
+    margin-left: 15px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .categoreProduct__h2{
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    h2{
+      width: 100% ;
+    }
+  }
+  .categoreProduct__h2 a{
+    margin-top: 10px;
+    display: inline-block;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+

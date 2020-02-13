@@ -1,0 +1,300 @@
+.aboutHeaer {
+  h1{
+    font-family: Roboto;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.43;
+    color: $dark-blue-grey;
+    padding: 60px 0;
+  }
+  &__img {
+    width: 100%;
+    height: 550px;
+    background: url("../img/about/header-bg.jpg") 0 0 no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+/*why Dalocs*/
+.whyDalocs {
+  h2{
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: bold;
+    color: $dark-blue-grey;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__col {
+    width: 40%;
+    p{
+      font-size: 14px;
+      line-height: 2;
+      letter-spacing: normal;
+      color: $dusk;
+    }
+  }
+}
+
+/*history of Company*/
+.historyCompany {
+  h2{
+    padding-top: 100px;
+    padding-bottom: 70px;
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    color: $dark-blue-grey;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    &__bg{
+      width: 418px;
+      height: 418px;
+      position: absolute;
+      bottom: -62px;
+      left: 15px;
+    }
+  }
+  &__row__item {
+    width: 170px;
+    padding: 8px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+  &__row__item__header {
+    display: flex;
+    padding-bottom: 10px;
+    .header__number {
+      font-size: 23px;
+      font-weight: bold;
+      color: $dark-blue-grey;
+      margin-right: 19px;
+      &.red{
+        color: $pastel-red;
+      }
+    }
+    .header__dots {
+      display: flex;
+      align-items: center;
+      span{
+        background-color: $cool-grey;
+        display: block;
+        width: 6px;
+        height: 6px;
+        margin-right: 10px;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__row__item__text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $dusk-two;
+  }
+
+}
+
+/* Company Benefits */
+.companyBenefits {
+  margin-top: 50px;
+  h2{
+    font-size: 23px;
+    font-weight: bold;
+    color: $dark-blue-grey;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 233px;
+    margin: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    color: $dark-blue-grey;
+    margin-bottom: 50px;
+    img{
+      margin-bottom: 20px;
+      margin-left:-14px;
+    }
+  }
+}
+
+/* SMI*/
+.smi {
+  padding-bottom: 100px;
+  h2{
+    font-size: 23px;
+    font-weight: bold;
+    color: $dark-blue-grey;
+    padding-bottom: 60px;
+    padding-top: 100px;
+  }
+  &__row {
+    display: flex;
+  }
+  &__item {
+    width: 270px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 5px 5px rgba(92, 103, 133, 0.1);
+    background-color: #fdfdff;
+    margin: 0 15px;
+    img{
+      border-radius: 8px 8px 0 0;
+      width: 100%;
+      height: 250px;
+    }
+    &:hover{
+      .smi__item__text{
+        color:  $pastel-red;
+      }
+    }
+    &:hover{
+      .smi__item__more{
+        color: $dusk;
+      }
+    }
+  }
+  &__item__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #1d1841;
+    transition: all 0.4s;
+    display: block;
+    padding: 20px 30px 10px 30px;
+  }
+  &__item__more {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #b7b5c4;
+    display: block;
+    padding: 0px 30px 20px 30px;
+    transition: all 0.4s;
+    &:after {
+      content: url(../img/icon/arrow-left.png);
+      padding-left: 7px;
+      vertical-align: middle;
+      padding-top: 13px;
+      position: relative;
+      top: 1px;
+    }
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* our clients */
+.ourClients {
+  h2{
+    padding-top: 60px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: $dark-blue-grey;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__col {
+    width: 19%;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .aboutHeaer__img {
+    background-size: cover;
+  }
+  .aboutHeaer h1{
+    text-align: center;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .aboutHeaer__img {
+    height: 350px;
+    background-size: cover;
+  }
+  .historyCompany__row{
+    justify-content: center;
+  }
+  .smi__row{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .smi__item{
+    margin: 20px;
+  }
+  .companyBenefits__row{
+    justify-content: center;
+  }
+  .companyBenefits__item{
+    text-align: center;
+  }
+  .companyBenefits__item img{
+    margin-left: 0;
+  }
+  .ourClients__col{
+    width: 260px;
+  }
+  .smi h2, .whyDalocs h2{
+    text-align: center;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .historyCompany__row__bg {
+    width: 250px;
+    height: 250px;
+  }
+  .whyDalocs__row{
+    flex-direction: column;
+  }
+  .whyDalocs__col{
+    &:first-of-type{
+      margin-bottom: 15px;
+    }
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .aboutHeaer__img{
+    height: 215px;
+  }
+  .aboutHeaer h1{
+    font-size: 28px;
+  }
+}
+
